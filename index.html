@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <menu>
+        <name>Lightme.</name>
+        <div class="input">
+            <input type="search" placeholder="Search...">
+            <img src="./assets/search.svg" width="21" height="21" alt="">
+        </div>
+        <upload>Upload</upload>
+    </menu>
+
+    <upload-page id="bg">
+        <cover>
+            <img-preview>Web Image
+                <img src="./assets/image.svg" alt="">
+                <input type="file" id="imageFile"/>
+            </img-preview>
+            <input type="text" id="web-name" placeholder="website name" />
+            <input type="url" id="web-url" placeholder="website url" />
+            <span>-- user --</span>
+            <input type="text" placeholder="Your names" />
+            <input type="email" placeholder="Your email" />
+            <button onclick="sendEmailWithAttachment()">Upload</button>
+        </cover>
+    </upload-page>
+
+    <div class="projects">
+        <div class="project">
+            <div class="pro-menu">
+                <img src="./assets/visit.svg" alt="">
+                <img src="./assets/message.svg" alt="">
+            </div>
+            <div class="project-profile">
+                <img src="./assets/tripguide.png" alt="">
+            </div>
+            <div class="client">
+                <h1>Trip Guide</h1>
+            </div>
+
+        </div>
+        <div class="project">
+            <div class="pro-menu">
+                <img src="./assets/visit.svg" alt="">
+                <img src="./assets/message.svg" alt="">
+            </div>
+            <div class="project-profile">
+                <img src="./assets/jobit.png" alt="">
+            </div>
+            <div class="client">
+                <h1>Jobit</h1>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
